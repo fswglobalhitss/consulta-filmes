@@ -1,0 +1,19 @@
+{
+  "name": "desafiotec",
+  "version": "1.0.0",
+  "description": "1. Abrir o backend feito em .Net 8 no visual studio 2022 ou visual studio code.\r 2. Dentro do projeto ConsultaFilmes.Repository procurar o arquivo FilmeRepository.cs  7\r 3. No arquivo informar o Token de acesso da API pública na linha 22\r ![image](https://github.com/user-attachments/assets/14a93b3c-8c69-4502-820f-3e28f76a1210)",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:override": "cypress run --browser chrome",
+    "cy:run": "cypress run --spec 'cypress/integration/'",
+    "cy:verify": "cypress verify",
+    "cy:info": "cypress info"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.3"
+  }
+}
