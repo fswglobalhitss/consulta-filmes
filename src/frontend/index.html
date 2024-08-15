@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Filmes</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+
+    </style>
 </head>
 <body>
-
+<h1></h1>
     <div ng-app="myApp" ng-controller="filmeCtrl">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -27,8 +30,6 @@
     
                 <div class="container">
     
-                    <br>
-    
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Digite seu nome</span>
                         <input type="text" class="form-control" aria-label="nome" aria-describedby="basic-addon1" ng-model="nome">
@@ -39,8 +40,6 @@
                     </div>
         
                     <button type="button" ng-click="pesquisar();" class="btn btn-primary">Pesquisar</button>
-        
-                    <br>
         
                     <table class="table">
                         <thead>
@@ -61,8 +60,7 @@
             <div class="tab-pane fade" id="historico-tab-pane" role="tabpanel" aria-labelledby="historico-tab" tabindex="0">
             
                 <div class="container">
-                    
-                    <br>
+
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Nome do Pesquisador</span>
                         <input type="text" class="form-control" aria-label="pesquisador" aria-describedby="basic-addon1" ng-model="pesquisador">
@@ -72,8 +70,6 @@
                         <input type="text" class="form-control" aria-label="nomeFilme" aria-describedby="basic-addon1" ng-model="nomeFilme">
                     </div>
                     <button type="button" ng-click="carregarHistorico();" class="btn btn-primary">Pesquisar</button>
-                    <br>
-                    <br>
 
                     <table class="table">
                         <thead>
