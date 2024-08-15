@@ -1,4 +1,3 @@
-using ConsultaFilmes.Domain;
 using ConsultaFilmes.Domain.Services;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -15,16 +14,28 @@ public class FilmeController : ControllerBase
 
     [HttpGet]
     [EnableCors]
-    public async Task<List<Filme>> Get(string nomePessoa, string nomeFilme) 
+    public async Task<IActionResult> Get(string nomePessoa, string nomeFilme)
     {
         var result = await FilmeService.Consultar(nomeFilme);
 
         await FilmeService.GuardarHistorico(nomePessoa, nomeFilme);
 
-        return result;
+        if (!result.Any())
+            return NotFound();
+
+        return Ok(result);
     }
 
     [HttpGet("Historico")]
     [EnableCors]
-    public async Task<List<HistoricoDto>> GetHistorico(string? pesquisador, string? filme) => await FilmeService.ObterHistorico(pesquisador, filme);
+    public async Task<IActionResult> GetHistorico(string? pesquisador, string? filme)
+    {
+        var result = await FilmeService.ObterHistorico(pesquisador, filme);
+
+        if (!result.Any())
+            return NotFound();
+
+        return Ok(result);
+
+    }
 }

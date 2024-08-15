@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sbwMa8kDfTA=",
+  "dgSpecHash": "p8/nhXOQxx8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Tests\\ConsultaFilmes.Tests.csproj",
+  "projectFilePath": "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Tests\\ConsultaFilmes.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pe_va\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\pe_va\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

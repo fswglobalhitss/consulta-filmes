@@ -2323,11 +2323,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Repository\\ConsultaFilmes.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Repository\\ConsultaFilmes.Repository.csproj",
       "projectName": "ConsultaFilmes.Repository",
-      "projectPath": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Repository\\ConsultaFilmes.Repository.csproj",
+      "projectPath": "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Repository\\ConsultaFilmes.Repository.csproj",
       "packagesPath": "C:\\Users\\pe_va\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Repository\\obj\\",
+      "outputPath": "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pe_va\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2345,8 +2345,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj": {
-              "projectPath": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj"
+            "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj": {
+              "projectPath": "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj"
             }
           }
         }
