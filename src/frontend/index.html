@@ -17,6 +17,12 @@
         .input-group-text {
             width:12rem;
         }
+        .resultados {
+            margin:50px auto;
+        }
+        .botao {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -49,9 +55,11 @@
                         <input type="text" class="form-control" aria-label="filme" aria-describedby="basic-addon1" ng-model="filme">
                     </div>
         
-                    <button type="button" ng-click="pesquisar();" class="btn btn-primary">Pesquisar</button>
+                    <div class="botao">
+                        <button type="button" ng-click="pesquisar();" class="btn btn-primary">Pesquisar</button>
+                    </div>
         
-                    <table class="table">
+                    <table class="table resultados">
                         <thead>
                             <tr>
                                 <th scope="col">Nome do Filme</th>
@@ -79,9 +87,10 @@
                         <span class="input-group-text" id="basic-addon1">Nome do Filme</span>
                         <input type="text" class="form-control" aria-label="nomeFilme" aria-describedby="basic-addon1" ng-model="nomeFilme">
                     </div>
-                    <button type="button" ng-click="carregarHistorico();" class="btn btn-primary">Pesquisar</button>
-
-                    <table class="table">
+                    <div class="botao">
+                        <button type="button" ng-click="carregarHistorico();" class="btn btn-primary">Pesquisar</button>
+                    </div>
+                    <table class="table resultados">
                         <thead>
                             <tr>
                                 <th scope="col">Id</th>
