@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Filmes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <div ng-app="myApp" ng-controller="filmeCtrl">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pesquisa-tab" data-bs-toggle="tab" data-bs-target="#pesquisa-tab-pane" type="button" role="tab" aria-controls="pesquisa-tab-pane" aria-selected="true">
+                    Pesquisa
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="historico-tab" data-bs-toggle="tab" data-bs-target="#historico-tab-pane" type="button" role="tab" aria-controls="historico-tab-pane" aria-selected="false">
+                    Histórico
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="pesquisa-tab-pane" role="tabpanel" aria-labelledby="pesquisa-tab" tabindex="0">
+    
+                <div class="container">
+    
+                    <br>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Digite seu nome</span>
+                        <input type="text" class="form-control" aria-label="nome" aria-describedby="basic-addon1" ng-model="nome">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Digite o nome do filme</span>
+                        <input type="text" class="form-control" aria-label="filme" aria-describedby="basic-addon1" ng-model="filme">
+                    </div>
+        
+                    <button type="button" ng-click="pesquisar();" class="btn btn-primary">Pesquisar</button>
+        
+                    <br>
+        
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nome do Filme</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="x in nomes">
+                                <td>{{ x.nome }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+                
+            <div class="tab-pane fade" id="historico-tab-pane" role="tabpanel" aria-labelledby="historico-tab" tabindex="0">
+            
+                <div class="container">
+                    
+                    <br>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Nome do Pesquisador</span>
+                        <input type="text" class="form-control" aria-label="pesquisador" aria-describedby="basic-addon1" ng-model="pesquisador">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Nome do Filme</span>
+                        <input type="text" class="form-control" aria-label="nomeFilme" aria-describedby="basic-addon1" ng-model="nomeFilme">
+                    </div>
+                    <button type="button" ng-click="carregarHistorico();" class="btn btn-primary">Pesquisar</button>
+                    <br>
+                    <br>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Data da Pesquisa</th>
+                                <th scope="col">Nome do Pesquisador</th>
+                                <th scope="col">Nome do Filme</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="x in historico">
+                                <td>{{ x.id }}</td>
+                                <td>{{ x.dataPesquisa }}</td>
+                                <td>{{ x.pesquisador }}</td>
+                                <td>{{ x.filme }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                
+            </div>
+
+        </div>
+    
+    </div>
+    
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('filmeCtrl', function($scope, $http) {
+            $scope.pesquisar = function() {
+                const nome = $scope.nome;
+                const filme = $scope.filme;
+
+                if(nome == undefined || filme == undefined)
+                {
+                    alert("É necessário informar seu nome e nome do filme");
+                    return;     
+                }
+
+                $http.get("http://localhost:5009/filme?nomePessoa=" + nome + "&nomeFilme=" + filme)
+                .then(function (response) 
+                    {
+                        $scope.nomes = response.data;
+                    });
+            };
+            $scope.carregarHistorico = function() {
+                const pesquisador = $scope.pesquisador;
+                const nomeFilme = $scope.nomeFilme;
+                
+                let url = "http://localhost:5009/filme/historico?pesquisador=" + pesquisador + "&filme=" + nomeFilme;
+                
+                if(pesquisador == undefined && nomeFilme == undefined)
+                    url = "http://localhost:5009/filme/historico";
+                
+                
+                $http.get(url)
+                .then(function (response) 
+                    {
+                        $scope.historico = response.data;
+                    });
+            };
+        });
+    </script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

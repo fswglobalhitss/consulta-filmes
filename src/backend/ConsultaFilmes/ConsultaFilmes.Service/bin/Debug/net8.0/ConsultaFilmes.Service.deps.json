@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ConsultaFilmes.Service/1.0.0": {
+        "dependencies": {
+          "ConsultaFilmes.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ConsultaFilmes.Service.dll": {}
+        }
+      },
+      "ConsultaFilmes.Domain/1.0.0": {
+        "runtime": {
+          "ConsultaFilmes.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsultaFilmes.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ConsultaFilmes.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

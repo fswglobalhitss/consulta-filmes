@@ -1,0 +1,11 @@
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Domain\bin\Debug\net8.0\ConsultaFilmes.Domain.deps.json
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Domain\bin\Debug\net8.0\ConsultaFilmes.Domain.dll
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Domain\bin\Debug\net8.0\ConsultaFilmes.Domain.pdb
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Domain\obj\Debug\net8.0\ConsultaFilmes.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Domain\obj\Debug\net8.0\ConsultaFilmes.Domain.AssemblyInfoInputs.cache
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Domain\obj\Debug\net8.0\ConsultaFilmes.Domain.AssemblyInfo.cs
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Domain\obj\Debug\net8.0\ConsultaFilmes.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Domain\obj\Debug\net8.0\ConsultaFilmes.Domain.dll
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Domain\obj\Debug\net8.0\refint\ConsultaFilmes.Domain.dll
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Domain\obj\Debug\net8.0\ConsultaFilmes.Domain.pdb
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Domain\obj\Debug\net8.0\ref\ConsultaFilmes.Domain.dll

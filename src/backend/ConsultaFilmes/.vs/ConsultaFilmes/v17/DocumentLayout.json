@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B5FED3-F662-4F5A-A1F2-B1BC53591AE9}|ConsultaFilmes.Repository\\ConsultaFilmes.Repository.csproj|c:\\users\\pe_va\\desktop\\estudo\\consulta-filmes\\src\\backend\\consultafilmes\\consultafilmes.repository\\filmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9B5FED3-F662-4F5A-A1F2-B1BC53591AE9}|ConsultaFilmes.Repository\\ConsultaFilmes.Repository.csproj|solutionrelative:consultafilmes.repository\\filmerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FilmeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Repository\\FilmeRepository.cs",
+              "RelativeDocumentMoniker": "ConsultaFilmes.Repository\\FilmeRepository.cs",
+              "ToolTip": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Repository\\FilmeRepository.cs",
+              "RelativeToolTip": "ConsultaFilmes.Repository\\FilmeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:28:36.87Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

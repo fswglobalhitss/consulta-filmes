@@ -1,0 +1,15 @@
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\bin\Debug\net8.0\ConsultaFilmes.Service.deps.json
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\bin\Debug\net8.0\ConsultaFilmes.Service.dll
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\bin\Debug\net8.0\ConsultaFilmes.Service.pdb
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\bin\Debug\net8.0\ConsultaFilmes.Domain.dll
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\bin\Debug\net8.0\ConsultaFilmes.Domain.pdb
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\obj\Debug\net8.0\ConsultaFilmes.Service.csproj.AssemblyReference.cache
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\obj\Debug\net8.0\ConsultaFilmes.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\obj\Debug\net8.0\ConsultaFilmes.Service.AssemblyInfoInputs.cache
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\obj\Debug\net8.0\ConsultaFilmes.Service.AssemblyInfo.cs
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\obj\Debug\net8.0\ConsultaFilmes.Service.csproj.CoreCompileInputs.cache
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\obj\Debug\net8.0\Consulta.E6EFB058.Up2Date
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\obj\Debug\net8.0\ConsultaFilmes.Service.dll
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\obj\Debug\net8.0\refint\ConsultaFilmes.Service.dll
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\obj\Debug\net8.0\ConsultaFilmes.Service.pdb
+C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes\ConsultaFilmes.Service\obj\Debug\net8.0\ref\ConsultaFilmes.Service.dll

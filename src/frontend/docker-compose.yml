@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  my-angular-app:
+    image: myangularapp
+    container_name: appdemo-front
+    ports:
+      - "80:80"
+    build:
+      context: .
+      dockerfile: Dockerfile

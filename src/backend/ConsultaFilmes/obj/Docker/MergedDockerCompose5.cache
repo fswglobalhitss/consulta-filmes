@@ -1,0 +1,70 @@
+name: dockercompose6307847385881424936
+services:
+  app_db:
+    container_name: app_db
+    environment:
+      POSTGRES_DB: SampleDriverDb
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    image: postgres:latest
+    networks:
+      dev: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: "5433"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: app_data
+      target: /var/lib/postgresql/data
+      volume: {}
+  consultafilmes.api:
+    build:
+      context: C:\Users\pe_va\Desktop\Estudo\consulta-filmes\src\backend\ConsultaFilmes
+      dockerfile: ConsultaFilmes.API/Dockerfile
+    container_name: appdemo-service
+    depends_on:
+      app_db:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+      ASPNETCORE_URLS: http://+:80
+      ConnectionStrings__DefaultConnection: User ID =postgres;Password=postgres;Server=app_db;Port=5432;Database=SampleDriverDb;
+    image: consultafilmesapi
+    networks:
+      dev: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "5009"
+      protocol: tcp
+    - mode: ingress
+      target: 8080
+      protocol: tcp
+    - mode: ingress
+      target: 8081
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\pe_va\AppData\Roaming/Microsoft/UserSecrets
+      target: /home/app/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\pe_va\AppData\Roaming/ASP.NET/Https
+      target: /home/app/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  dev:
+    name: dockercompose6307847385881424936_dev
+    driver: bridge
+volumes:
+  app_data:
+    name: dockercompose6307847385881424936_app_data

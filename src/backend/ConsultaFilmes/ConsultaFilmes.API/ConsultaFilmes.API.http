@@ -1,0 +1,6 @@
+@ConsultaFilmes.API_HostAddress = http://localhost:5167
+
+GET {{ConsultaFilmes.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
