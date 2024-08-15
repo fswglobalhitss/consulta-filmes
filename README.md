@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/95c27bf3-d7a7-41d7-b593-94f00ca8123b)# Passo a Passo para executar o projeto
+# Passo a Passo para executar o projeto
 
 1. Abrir o backend feito em .Net 8 no visual studio 2022 ou visual studio code.
 2. Dentro do projeto ConsultaFilmes.Repository procurar o arquivo FilmeRepository.cs  7
