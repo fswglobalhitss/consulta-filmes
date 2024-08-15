@@ -4,6 +4,7 @@ using ConsultaFilmes.Domain.Services;
 using ConsultaFilmes.Repository;
 using ConsultaFilmes.Service;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(opt => opt.SwaggerDoc("v1", new OpenApiInfo 
+{
+    Title = "Consulta de Filmes",
+    Description = "API REST .NET 8 com EntityFramework e bando de dados relacional PostgreSql",
+    Version = "v1",
+    Contact = new OpenApiContact
+    {
+        Name = "GlobalHitss",
+        Email = "claudio.lopes@globalhitss.com.br",
+        Url = new Uri("https://globalhitss.com/br/")
+    }
+}));
 
 builder.Services.AddScoped<IFilmeService, FilmeService>();
 builder.Services.AddScoped<IFilmeRepository, FilmeRepository>();
