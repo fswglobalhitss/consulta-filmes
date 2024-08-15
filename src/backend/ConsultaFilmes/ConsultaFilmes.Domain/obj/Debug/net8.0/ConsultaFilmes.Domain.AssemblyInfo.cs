@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsultaFilmes.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7ca68cdab26e11919fd1a2b24948a04c81e22eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1ad70e1f2eafaca0be01bdf15bedb3e11ea71df")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsultaFilmes.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsultaFilmes.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

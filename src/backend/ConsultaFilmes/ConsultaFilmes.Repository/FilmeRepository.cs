@@ -19,7 +19,7 @@ public class FilmeRepository : IFilmeRepository
     public async Task<Root> Consultar(string nome)
     {
         HttpClient client = new();
-        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", ""); //informar o token de acesso da api pública
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "_tiUYULTQlTwdWO3IhR0"); //informar o token de acesso da api pública
 
         string url = "https://the-one-api.dev/v2/movie";
         if (!string.IsNullOrEmpty(nome))
@@ -43,8 +43,8 @@ public class FilmeRepository : IFilmeRepository
     public async Task<List<Historico>> ObterHistorico(string? pesquisador, string? filme) 
     {
         return await ApiDbContext.Historicos
-                                 .Where(x => (pesquisador != null ? x.NomePessoa.Contains(pesquisador) : x.NomePessoa == x.NomePessoa)
-                                          && (filme != null ? x.NomeFilme.Contains(filme) : x.NomeFilme == x.NomeFilme))
+                                 .Where(x => (!string.IsNullOrEmpty(pesquisador) ? x.NomePessoa.Contains(pesquisador) : x.NomePessoa == x.NomePessoa)
+                                          && (!string.IsNullOrEmpty(filme) ? x.NomeFilme.Contains(filme) : x.NomeFilme == x.NomeFilme))
                                  .ToListAsync();
 
     }

@@ -76,11 +76,11 @@
                 <div class="container">
     
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">Digite seu nome</span>
+                        <span class="input-group-text" id="basic-addon1">Digite seu nome:*</span>
                         <input type="text" class="form-control" aria-label="nome" aria-describedby="basic-addon1" ng-model="nome">
                     </div>
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">Digite o nome do filme</span>
+                        <span class="input-group-text" id="basic-addon1">Digite o nome do filme:*</span>
                         <input type="text" class="form-control" aria-label="filme" aria-describedby="basic-addon1" ng-model="filme">
                     </div>
         
@@ -153,9 +153,15 @@
                 const nome = $scope.nome;
                 const filme = $scope.filme;
 
-                if(nome == undefined || filme == undefined)
+                if(nome == undefined ||nome.trim() == '')
                 {
-                    alert("É necessário informar seu nome e nome do filme");
+                    alert("É necessário informar seu nome");
+                    return;     
+                }
+
+                if(filme == undefined || filme.trim() == '')
+                {
+                    alert("É necessário informar o nome do filme");
                     return;     
                 }
 
@@ -163,22 +169,31 @@
                 .then(function (response) 
                     {
                         $scope.nomes = response.data;
+                    },function(){
+                        $scope.nomes = [];
+                        alert('Não foram encontrados filmes com os dados informados')
                     });
             };
             $scope.carregarHistorico = function() {
-                const pesquisador = $scope.pesquisador;
-                const nomeFilme = $scope.nomeFilme;
                 
+                let pesquisador = $scope.pesquisador;
+                let nomeFilme = $scope.nomeFilme;
+                
+                if(pesquisador == undefined)
+                    pesquisador ='';
+
+                if(nomeFilme == undefined)
+                    nomeFilme ='';
+
                 let url = "http://localhost:5009/filme/historico?pesquisador=" + pesquisador + "&filme=" + nomeFilme;
-                
-                if(pesquisador == undefined && nomeFilme == undefined)
-                    url = "http://localhost:5009/filme/historico";
-                
                 
                 $http.get(url)
                 .then(function (response) 
-                    {
+                     {
                         $scope.historico = response.data;
+                     },function(){
+                        $scope.historico = [];
+                        alert('Não foi encontrado histórico com os dados informados')
                     });
             };
         });
