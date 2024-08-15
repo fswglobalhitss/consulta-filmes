@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nklWiKWQTiM=",
+  "dgSpecHash": "iEQO9Sv9Liw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.API\\ConsultaFilmes.API.csproj",
+  "projectFilePath": "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.API\\ConsultaFilmes.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pe_va\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\pe_va\\.nuget\\packages\\microsoft.aspnet.webapi.client\\6.0.0\\microsoft.aspnet.webapi.client.6.0.0.nupkg.sha512",

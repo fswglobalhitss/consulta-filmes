@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj": {}
+    "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj": {
+    "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj",
         "projectName": "ConsultaFilmes.Domain",
-        "projectPath": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj",
+        "projectPath": "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\ConsultaFilmes.Domain.csproj",
         "packagesPath": "C:\\Users\\pe_va\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pe_va\\Desktop\\Estudo\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\obj\\",
+        "outputPath": "C:\\Users\\pe_va\\Desktop\\consulta-filmes\\src\\backend\\ConsultaFilmes\\ConsultaFilmes.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pe_va\\AppData\\Roaming\\NuGet\\NuGet.Config",
