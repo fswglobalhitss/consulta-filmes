@@ -6,8 +6,7 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:override": "cypress run --browser chrome",
-    "cy:run": "cypress run --spec 'cypress/integration/'",
-    "cy:docker": "docker-compose up --exit-code-from cypress",
+    "cy:run": "cypress run --spec 'cypress/e2e/integration/'",
     "cy:verify": "cypress verify",
     "cy:info": "cypress info"
   },

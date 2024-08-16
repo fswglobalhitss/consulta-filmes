@@ -1,10 +1,9 @@
-module.exports = {
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
   e2e: {
-    baseUrl: 'http://localhost:5009',
-    specPattern: 'e2e/integration/**/*.cy.js'
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
   },
-  video: false, // Desabilita a gravação de vídeo dos testes
-  screenshotsFolder: 'screenshots',
-  videosFolder: 'videos',
-  fixturesFolder: 'fixtures',
-};
+});
