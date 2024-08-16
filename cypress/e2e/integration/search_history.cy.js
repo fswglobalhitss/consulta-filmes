@@ -1,4 +1,4 @@
-const url = 'http://localhost/'
+const url = 'http://localhost/';
 const pesquisador = 'Pedro';
 const pesquisadorNaoExistente = 'NaoEncontrado';
 const historicoNaoExistente = 'NaoEncontrado';
@@ -10,7 +10,7 @@ const elementMovie = 'input[aria-label="nomeFilme"]';
 const elementBotao = 'button[ng-click="carregarHistorico();"]';
 const movieNameNotFound = 'Nao tem';
 
-const elementosTabela = ''
+const elementosTabela = '';
 
 describe('Search History', () => {
   it('should display search history', () => {

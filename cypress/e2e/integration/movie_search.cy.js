@@ -3,7 +3,7 @@ const userName = 'Pedro';
 const movieName = 'The Hobbit Series';
 const userName2 = 'Jane Doe';
 const movieNameNotFound = 'NonexistentMovie123';
-const url = 'http://localhost/'
+const url = 'http://localhost/';
 const elementNome = 'input[aria-label="nome"]';
 const elementMovie = 'input[aria-label="filme"]'; 
 
