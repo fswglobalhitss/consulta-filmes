@@ -1,15 +1,15 @@
-version: '3'
+version: '3.4'
 services:
   frontend:
     build:
-      context: ./frontend
+      context: ./src/frontend
       dockerfile: Dockerfile
     ports:
       - "4200:4200"
 
   backend:
     build:
-      context: ./backend
+      context: ./src/ConsultaFilmes/ConsultaFilmes.API
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
@@ -17,4 +17,13 @@ services:
   cypress:
     build:
       context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - frontend
+      - backend
+    environment:
+      - CYPRESS_baseUrl=http://localhost
+    volumes:
+      - ./cypress:/e2e
+      - ./cypress.config.js:/cypress.config.js
     command: npx cypress run
