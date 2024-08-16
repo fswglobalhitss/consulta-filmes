@@ -15,27 +15,7 @@
 - docker-compose up
 
 ## Executando testes Cypress via Docker
-Este comando irá construir os containers necessários, iniciar seus serviços frontend e backend, e então executar os testes Cypress contra esses serviços.
-Para executar os testes Cypress usando Docker, siga estes passos:
-1. Certifique-se de que o Docker está instalado e em execução.
-2. Na raiz do projeto, execute:
-- npm run cy:docker
-
-
-## Executando o projeto completo com Docker Compose
-Isso construirá os containers necessários, iniciará todos os serviços definidos no docker-compose.yml e executará os testes Cypress.
-Para executar todo o projeto (frontend, backend e testes) usando Docker Compose:
-1. Na raiz do projeto, execute:
-- docker-compose up --build
-2. Para parar todos os serviços, use:
-- docker-compose down
-
-## Desenvolvimento local
-Para desenvolvimento local sem Docker:
-1. Inicie o backend (instruções específicas do seu projeto)
-2. Inicie o frontend (instruções específicas do seu projeto)
-3. Para abrir o Cypress Test Runner:
-- npm run cy:open
-
-4. Para executar os testes Cypress no terminal:
+Este comando irá executar os testes Cypress contra esses serviços frontend e backend.
+7. Na raiz do projeto, execute um destes dois comandos:
+- npx cypress run
 - npm run cy:run
